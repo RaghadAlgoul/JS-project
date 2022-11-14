@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <script src="https://kit.fontawesome.com/cf9682991b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <section>
+        <div class="imgbox">
+            <img src="sign in.jpg">
+        </div>
+        <div class="signinbox">
+            <div class="formbox">
+                <h1>Sign in</h1>
+                <form>
+                    <div  class="fa">
+                        <a href="https://www.facebook.com/?stype=lo&jlou=AfeIE8DDkB5YaN3BpRndUWuo8f7t5s9jrjWLoCoJDicem40qVwm6lrXS-Nby33s_jLgZcqjOgIBJjcRVw4VL-ke8CK-mGuBa3UU0DkKvgXEkIA&smuh=8022&lh=Ac_v-bvnrFk57lWg2dY" target="_blank" class="fa fa-facebook"></a>
+                        <a href="https://accounts.google.com/ServiceLogin/signinchooser?elo=1&ifkv=ARgdvAusf7YyR3_oyzxyV5DhqyCkYksyNhAItaVO8l6_9L4wMm9ZfYMof5b19S4yunEGEA3l7ZKKDQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" class="fa fa-google"></a>
+                        <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsetup%2Fnew%2F%3Fsrc%3Dgo-pa%26veh%3Dnull%26mcid%3D6829211277693452295%26gclid%3DEAIaIQobChMI3-W8s4St-wIVFZ3VCh3EmgidEAAYASAAEgL3tPD_BwE" target="_blank" class="fa fa-linkedin"></a>
+                    </div>
+                    <div class="inputbox">
+                        <input id="Email1" class="email" name="email" value="" placeholder="E-mail"><br>
+                    </div>
+                    <div class="inputbox">
+                        <input id="pass11" class="password1" type="password" name="password" value="" placeholder="Password">
+                    </div>
+                    <div class="signup">
+                        <p>Don't have an account?<a href="regestration.html">Register here</a></p>
+                    </div>   
+                    <div class="submit" >
+                        <a href="" class="sumbit1" onclick="signin()" id="signin">Sign in</a>
+                    </div>
+             </form>
+            </div>
+        </div>
+</section>
+                
+<script>
+
+
+let E= JSON.parse(localStorage.getItem("users")) ;
+console.log(E);
+function signin(){
+    
+
+let log_email = document.getElementById("Email1").value;
+console.log(log_email);
+    
+    
+let log_pass = document.getElementById("pass11").value;
+console.log(log_pass);
+
+for( let i=0;i<E.length ;i++)
+{
+if(E[i].email != log_email && E[i].password ==log_pass)
+{
+    alert("email not correct");
+}
+
+if(E[i].email == log_email && E[i].password !=log_pass)
+{
+    alert("password not correct");
+}
+
+if(E[i].email == log_email && E[i].password ==log_pass)
+{
+   
+
+    document.getElementById("signin").href="http://127.0.0.1:5500/Welcome.html";
+}
+
+
+}
+
+
+
+}
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <script src="https://kit.fontawesome.com/cf9682991b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="regestration.css">
+
+</head>
+<body>
+<section>
+    <div class="imgbox">
+        <img src="signup1.jpg">
+    </div>
+    <div class="signupbox">
+        <div class="formbox">
+            <h1>Sign Up</h1>
+            <form>
+                <div  class="fa">
+                    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.google.com/" target="_blank" class="fa fa-google"></a>
+                    <a href="https://www.linkedin.com/feed/?trk=msn-top-arae" target="_blank" class="fa fa-linkedin"></a>
+                </div>
+                <div class="inputbox">
+                    <input id="fname" class="firstname" name="firstname" value="" placeholder="First Name">
+                </div>
+                    <div class="inputbox">
+                    <input id="lname" class="lastname" name="lastname" value="" placeholder="Last Name"><br>
+                </div>
+                
+                
+                <div class="inputbox">
+                    <input 
+                   id="Email" class="email" name="email" value="" placeholder="E-mail"><br>
+                </div>
+                <div class="password">
+                    <input id="pass1" class="password1" type="password" name="password" value="" placeholder="Password">
+                    <input id="pass2" class="password2" type="password" name="cpassword" value="" placeholder="Confirm Password">
+                </div>
+                <div class="birthdate">
+                    <input id="Birth" class="birth" type="text" name="birthdate"  placeholder="Year of Birth">
+                  </div>
+                <div class="already">
+                    <p>Alredy a member?<a href="login.html">log in</a></p>
+                    <p id="already-registered" style="color:red;display: none;">already-registered</p>
+                  
+                    <!-- <p id="M" style="color: red; display: none;" >Password not match!</p> -->
+                    <p class="message" style="color: red; display: none;">password not match!</p>
+                </div>   
+                <div class="submit" >
+                    <input  value="Create" type="submit" name="" onclick="isExist()" id="reg"
+                    style="background-color: #064E42;  
+                    border:1px solid #064E42;
+                    border-radius: 30px;
+                    width: 100px; 
+                    height: 40px; 
+                    color: white; 
+                    margin-bottom:30px ;
+                    transition: transform .1s;">
+                </div>
+                    
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+var users = [];
+console.log(localStorage.getItem("users"));
+
+if(localStorage.getItem("users") != null ){
+    users = JSON.parse(localStorage.getItem("users"));
+    console.log(users); 
+}
+
+
+var fname=document.getElementById("fname");
+var lname=document.getElementById("lname");
+var emailAddress=document.getElementById("Email");
+var password=document.getElementById("pass1");
+var confPass=document.getElementById("pass2");
+var birth=document.getElementById("Birth");
+var regButton = document.getElementById("reg");
+var message = document.querySelector(".message");
+message.style.display = "none"
+
+
+//form validation
+document.forms[0].onsubmit = function(e){
+    e.preventDefault();
+
+    //check if the user has an acount 
+    if (isExist()) {
+       document.getElementById("already-registered").style.display="block"
+        return;
+    }
+
+//check if the user exist 
+function isExist() {
+
+if(users.length > 0){
+    for(let i = 0 ; i < users.length ; i++){
+        if(users[i].email == emailAddress.value){
+            return true
+        }
+    }
+    return false ;
+}
+}
+
+   //validate user password and email
+    if(password.value === confPass.value ){
+        message.style.display = "none";
+        if(EmailValidation(emailAddress.value) ){
+            var user = {
+                fname : fname.value,
+                lname : lname.value,
+                email : emailAddress.value,
+                Birth: birth.value,
+                password : password.value
+          }
+
+          users.push(user);
+          localStorage.setItem("users" , JSON.stringify(users));
+
+        } 
+        else{
+            alert("Sorry! an invalid email!");
+        }
+
+   } 
+   else{
+    message.style.display = "block";
+   }
+}
+
+// if(password != confPass)
+// {
+// document.getElementById("M").style.display="block";
+// }
+
+//emain validation
+function EmailValidation(enteredEmail){
+var mail_format = /^w+([.-]?w+)@w+([.-]?w+)(.w{2,3})+$/;
+if(enteredEmail.match(enteredEmail))
+{
+return true;
+}
+Else
+{
+
+return false;
+}
+// document.getElementById("pp").innerHTML+=fname;
+}
+</script>
+    </body>
+</html>

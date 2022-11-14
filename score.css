@@ -1,0 +1,189 @@
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:#064E42;
+        background-image: url("ww.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+      }
+      
+      
+      .card {
+        width: 85%;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        padding: 50px;
+        text-align: center;
+        background-color:  #F2E8DF;
+        font-size: x-large;
+        border:7px solid #064E42;;
+        border-radius: 10%;
+        margin-top: 5rem;
+      }
+      
+      .card #pass{
+        color: #064E42;
+        font-weight: bold;
+        display:none;}
+      .card #fail {
+      
+        color: #064E42;
+        font-weight: bold;
+        display:none;
+      }
+    .button{
+        
+    width: 150px;
+    height: 50px;
+    color: #f6c9a7;
+    background-color: #064f44;
+    font-size: large;
+    border-radius: 15px;
+    text-decoration: none;
+    align-self: center;
+      }
+      
+      
+      #btn {
+        display: flex;
+        justify-content: space-around;
+    
+        
+      }
+      
+      
+    /* Variables */
+    
+    :root {
+        --rating-size: 7rem;
+        --bar-size: 1rem;
+        --background-color: #F2E8DF;
+        --rating-color-default:WHITE;
+        --rating-color-background: #064E42;
+        --rating-color-good: #27ae60;
+        --rating-color-bad: #e74c3c;
+      }
+      
+      /* Rating item */
+      .rating {
+      
+        font: 20px, "Helvetica Neue", Helvetica, Arial, sans-serif;
+       
+        border:5px solid  #064E42;
+        position: relative;
+        left:37%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        border-radius: 100%;
+        overflow: hidden;
+        background: var(--rating-color-default);
+        color: var(--rating-color-default);
+        width: var(--rating-size);
+        height: var(--rating-size);
+      
+        /* Basic style for the text */
+        font-size: calc(var(--rating-size) / 3);
+        line-height: 1;
+      }
+      
+      /* Rating circle content */
+      .rating span {
+        position: relative;
+        display: flex;
+        font-weight: bold;
+        
+        z-index: 2;
+      }
+      
+      .rating span small {
+        
+        font-size: 0.5em;
+        font-weight: 900;
+        align-self: center;
+      }
+      
+      /* Bar mask, creates an inner circle with the same color as thee background */
+      .rating::after {
+        content: "";
+        position: absolute;
+        top: var(--bar-size);
+        right: var(--bar-size);
+        bottom: var(--bar-size);
+        left: var(--bar-size);
+        box-shadow: 0 0 0 .1rem var(--rating-color-background);
+        background: var(--background-color);
+        border-radius: inherit;
+        z-index: 1;
+      }
+      
+      /* Bar background */
+      .rating::before {
+        
+        content: "";
+        position: absolute;
+        top: var(--bar-size);
+        right: var(--bar-size);
+        bottom: var(--bar-size);
+        left: var(--bar-size);
+        border-radius: inherit;
+        box-shadow: 0 0 0 1rem var(--rating-color-background);
+        z-index: -1;
+      }
+      
+      /* Classes to give different colors to ratings, based on their score */
+      .rating.good {
+        background: var(--rating-color-good);
+        color: var(--rating-color-good);
+      }
+      
+      .rating.bad {
+        background: var(--rating-color-bad);
+        color: var(--rating-color-bad);
+      }
+      
+        
+        
+  @media only screen and (min-device-width:0px) and (max-device-width:480px)
+  {
+body{background-image: none;}
+.card{
+
+    width: auto;
+    font-size: small;
+    margin-left:1rem;
+}
+
+.rating{
+    left:30%;
+}
+.button{font-size: small;}
+
+.main{flex-direction: column;
+justify-content: center;}
+
+
+  }
+
+  @media only screen and (min-device-width:481px) and (max-device-width:768px)
+  {
+    
+      body{background-image: none;}
+    .card{
+
+      width: auto;
+      font-size: small;
+      margin-left:2rem;
+      margin-top:4rem;
+  }
+  
+.rating{
+  left:27%;
+}
+  }

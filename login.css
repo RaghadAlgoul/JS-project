@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #064E42;
+
+}
+section{
+    position: relative;
+    width:100% ;
+    height: 100%;
+    display: flex;
+}
+section .imgbox{
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+section .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+section .signinbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    
+
+}
+section .signinbox .formbox{
+    width: 50%;
+    background-color:#F2E8DF ;
+    border-radius: 70px;
+    margin-top: 150px;
+
+
+}
+section .signinbox .formbox h1{
+    color: #064E42;
+margin-bottom: 30PX;
+margin-top: 20px;
+letter-spacing: 1px;
+text-align: center;
+}
+.submit{
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    font-size: 18px;
+    background: transparent;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;    
+    justify-content:space-around;
+    
+}
+.sumbit1{
+    background-color: #064E42;  
+    border:1px solid #064E42;
+    border-radius: 30px;
+    width: 100px; 
+    height: 40px; 
+    color: white; 
+    margin-bottom:30px ;
+    transition: transform .1s;
+    text-decoration: none;
+    text-align: center;
+    padding-top:7px;
+}
+.fa{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
+}
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+border:2px solid #064E42;
+    color: blue;
+    width:14%;
+}
+.fa-google{
+    border:2px solid #064E42;
+        color: red;
+        width: 14%;
+    }
+    .fa-linkedin{
+        border:2px solid #064E42;
+            color: rgb(9, 9, 202);
+            width: 14%;
+        }
+        
+        .inputbox{
+            margin-bottom: 20px;
+text-align: center;
+outline: none;
+
+
+        }
+        .email{
+            margin-bottom: 10px;
+            background:transparent;
+            border:3px solid #064E42;
+            border-radius: 10px;
+            padding-left: 10px;
+            width: 70%;
+            height: 40px;
+        
+        }
+        .password1{
+            padding-left: 10px;
+            background: transparent;
+            border:3px solid #064E42;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            width: 70%;
+            height: 40px;
+
+
+        }
+        .submit:hover{
+            transform: scale(1.2);
+        }
+       
+        .signup{
+            text-align: center;
+        
+        }
+        .signup a{
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+
+        @media(max-width:768px){
+           
+           
+            section .imgbox{
+    
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+        
+                height: 100%;
+            }
+
+            section .signinbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 30%;
+                z-index: 1;
+                margin-left: 10%;
+            }
+            section .signinbox .formbox {
+                width: 62%;
+                background-color: rgb(242 232 223 / 85%);
+                border-radius: 70px;
+                margin-top: 194px;
+            }
+          
+        }
+
+
+
+        
+        @media(max-width:480px){
+            section .signinbox .formbox {
+                width: 100%;
+                background-color: rgb(242 232 223 / 80%);
+                border-radius: 70px;
+                margin-top: 94px;
+            }
+
+
+
+
+
+        }

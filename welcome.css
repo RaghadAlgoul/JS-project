@@ -1,0 +1,151 @@
+#welcome_img{
+
+    height: 400px;
+    width: 100%;
+    object-fit:contain;
+}
+#div1{
+    position: relative;
+    background-color:  #feefd0;
+}
+#div2{
+    position: absolute;
+    top: 180px;
+    text-align: center;
+    left:37%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: cursive;
+}
+#div_card{
+    display: grid; 
+    justify-content: space-around;
+    grid-template-columns:auto auto auto;
+    gap:30px;
+} 
+.card {
+ 
+  
+    width: 295px; 
+    /* border: 3px solid #406891; */
+    
+    
+  }
+  #container {
+    padding: 1px 16px;
+  }
+  .button1{
+
+    background-color: #064E42 ;
+    color:#F2DEBA ;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 8px;
+   margin-left: 75px;
+   margin-bottom: 7px;
+  }
+ 
+  .navbar{
+    margin-top: -5px;
+    background-color: #064E42;
+    width: 100%;
+    height:73px;
+    
+}
+#b1{
+    color: #FFEFD6;
+    font-family: cursive;
+} 
+#navElement{
+    margin-left: 65%;
+   
+}
+li{
+    padding-right: 1%;
+   
+
+}
+.navItem{
+    color: #FFEFD6;
+}
+#logo{
+    width: 90px;
+    height: 70px;
+}
+
+
+
+/* i{
+    color: #FFEFD6;
+    padding-right: 13px;
+    font-size: x-large;
+}   */
+#footer{
+    background-color: #064E42;
+    display: flex;
+    
+    flex-direction: row; 
+    justify-content:space-between;
+
+    color: #FFEFD6;
+    padding-right: 13px;
+    font-size: large;
+} 
+.div_footer{
+    display: flex;
+    flex-direction: row;
+   
+   background-color: #064E42;
+   color: aliceblue;
+  
+  } 
+  a{
+    text-decoration: none;
+  }
+
+@media only screen and (min-device-width:481px)and (max-device-width:768px){
+    b{
+        font-size: 10px;
+    }
+
+    #div_card{
+        display: grid; 
+        justify-content: space-around;
+        grid-template-columns:auto auto;
+        gap:20px;
+    } 
+
+    #div2{
+        position: absolute;
+        top: 190px;
+        text-align: center;
+        left:30%;
+        font-size: large;
+        font-weight: bold;
+        font-family: cursive;
+    }
+}
+@media only screen and (min-device-width:0)and (max-device-width:480px){
+    #footer{
+        grid-template-columns: auto  ;
+    }
+    b{
+        font-size: 7px;
+    }
+
+    #div2{
+        position: absolute;
+        top: 190px;
+        text-align: center;
+        left:25%;
+        font-size: xx-small;
+        font-weight: bold;
+        font-family: cursive;
+    }
+    #div_card{
+        display: grid; 
+        justify-content: space-around;
+        grid-template-columns:auto;
+        gap:20px;
+    } 
+}

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewporemrt" contreent="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ShowResult.css">
+    <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <h1 style="text-align:center ;color: #FFEFD6; margin-top: 50px;">Your Answer and the correct</h1>    
+        <div class="container-result" onload="result()">
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        How old was Pele when he scored in his first Football World Cup final?
+                    </p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="correct-option  one-choice"><span
+                                class="correct-span circle-option"></span><span>17</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>18</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class=" one-choice"><span class="  circle-option"></span><span>19</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>20</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Player known as "الحكومه"?
+                    </p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span>
+                            <span>Cristiano Ronaldo</span>
+                        </p>
+                        <p class="one-choice"><span class="circle-option"></span><span>Leo Messi </span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>Kareem Binzima</span></p>
+                        <p class="one-choice"><span class="circle-option"></span>Luka Modric</p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        This voice returns to ?
+                    </p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>Mohammad Sawalha</span></p>
+                        <p class="correct-option  one-choice"><span class="correct-span  circle-option"></span><span>Hafeed
+                                Darraje</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>Esam Shawaly</span></p>
+                        <p class=" one-choice"><span class=" circle-option"></span><span>Fares Auad</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        How many goals did Real Madrid receive in its match against Barcelona in 2009?
+
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>4 goals</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>6
+                                goals</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class=" one-choice"><span class="circle-option"></span><span>8 goals</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>2
+                                goals</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>In what year was the Football World Cup first held?</p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>1926</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>1930
+                            </span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>1934</span></p>
+                        <p class=" one-choice"><span class="circle-option"></span><span>1938</span></p>
+
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Which team lost their first three World Cup finals?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>Brazil</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span  circle-option"></span><span>Holland
+                                (The Netherlands)</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>Argentina</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>France</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Name a country has won the World Cup twice?
+
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class=" one-choice"><span class=" circle-option"></span><span>England</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>Croatia</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>itally</span></p>
+                        <p class="correct-option one-choice"><span
+                                class="correct-span  circle-option"></span><span>france</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        I've worn numbers 7, 17, 28 and 9 in my career, playing my football across, England, Spain, Italy
+                        and Portugal. who am I?
+                    </p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>Raul</span>
+                        </p>
+                        <p class="one-choice"><span class="circle-option"></span><span>Beckham</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="correct-option  one-choice"><span
+                                class="correct-span  circle-option"></span><span>Cristiano Ronaldo</span></p>
+                        <p class=" one-choice"><span class=" circle-option"></span><span>Cavani</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>How many times has Rooney won the title of top scorer in the Premier League?</p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>Once</span></p>
+                        <p class=" one-choice"><span class="circle-option"></span><span>Twice</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class=" one-choice"><span class=" circle-option"></span><span>Three Times</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span  circle-option"></span><span>Never</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>Two people can make two bicycles in 2 hours. How many people are required to make 12 bicycles in 6
+                        hours?</p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>6</span>
+                        </p>
+                        <p class="one-choice"><span class="circle-option"></span><span>4</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class=" one-choice"><span class=" circle-option"></span><span>3</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>2</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Which number should be there next in this series? 25, 24, 22, 19, 15
+                    </p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>14</span>
+                        </p>
+                        <p class="one-choice"><span class="circle-option"></span><span>12</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>10</span>
+                        </p>
+                        <p class=" one-choice"><span class=" circle-option"></span><span>8</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Which one of the following teams has not won the European Championship?
+                    </p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>Denmark</span>
+                        </p>
+                        <p class="correct-option  one-choice"><span
+                                class="correct-span  circle-option"></span><span>Belgium</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="  circle-option"></span><span>Greece</span></p>
+                        <p class=" one-choice"><span class=" circle-option"></span><span>Romain</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Who is the only player to win the Champions League with three different clubs?
+                        Clarence Seedorf (Ajax, Real Madrid, AC Milan) ?
+                    </p>
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>Clarence Seedorf</span>
+                        </p>
+                        <p class="one-choice"><span class="circle-option"></span><span>van Basten</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="  circle-option"></span><span>Gunnar Nordahl</span></p>
+                        <p class=" one-choice"><span class=" circle-option"></span><span>Frank Rijkaard</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Messi has won a record number of Ballon d'Or awards - how many?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>Six Ballon d'Or awards</span></p>
+                        <p class=" one-choice"><span class="circle-option"></span><span>one Ballon d'Or awards</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="correct-option  one-choice"><span class="circle-option correct-span "></span><span>seven
+                                Ballon d'Or awards</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>three Ballon d'Or awards</span></p>
+
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        With three titles each, which two teams have won the most European Championships?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>Germany and Spain</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>1Portugal and brazil</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>itally and england</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>france and jordan</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+            
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        how long is a match of football?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>80 minutes</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>1
+                                hour
+                                and a half</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>60 minutes</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>100 minutes</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        how long is a match of football?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="one-choice"><span class="circle-option"></span><span>80 minutes</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>1
+                                hour
+                                and a half</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>60 minutes</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>100 minutes</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        Which club has won the most Champions League titles?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>Real Madrid</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>Barcelona</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>Juventus</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>Chelsea</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        .Which footballer has won the Premier League with both Leicester City and Manchester City?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>Riyad Mahrez</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>haland</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>mohammad salah</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>DE bruyne</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        how many players start on the football pitch?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class=" one-choice"><span class="circle-option"></span><span>22 players</span></p>
+                        <p class="correct-option one-choice"><span class="correct-span  circle-option"></span><span>11 players</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>9 players</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>12 players</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+            <div class="contaner-guestion">
+                <div class="question">
+                    <p>
+                        how large is a goalkeepers box where he/she can pick up the ball?
+                    </p>
+
+                </div>
+                <div class="options-rquestion">
+                    <div class="first-group">
+                        <p class="correct-option one-choice"><span class="correct-span circle-option"></span><span>18 yards</span></p>
+                        <p class=" one-choice"><span class="circle-option"></span><span>12 yards</span></p>
+                    </div>
+                    <div class="second-groun">
+                        <p class="one-choice"><span class="circle-option"></span><span>25 yards</span></p>
+                        <p class="one-choice"><span class="circle-option"></span><span>30 yards</span></p>
+                    </div>
+                </div>
+                <div class="your-answer">Your Answer is: </div>
+            </div>
+
+
+        </div>
+    <script>
+        
+        let userAnswer=document.getElementsByClassName("your-answer");
+        for (let i=1;i<userAnswer.length;i++){
+            document.getElementsByClassName("your-answer")[i-1].innerHTML+=sessionStorage.getItem("you'r answer on Q"+i)
+        }
+
+        
+        
+    </script>
+
+    </body>
+
+</html>

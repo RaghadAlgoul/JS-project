@@ -1,0 +1,100 @@
+
+body{
+    background-color: #FFEFD6;
+    position: relative;
+}
+.navbar{
+    margin-top: -5px;
+    background-color: #064E42;
+    width: 100%;
+    height:73px;
+}
+b{
+    color: #FFEFD6;
+    font-family: cursive;
+} 
+#navElement{
+    margin-left: 55%;
+}
+li{
+    padding-right: 10%;
+}
+.navItem{
+    color: #FFEFD6;
+}
+#logo{
+    width: 90px;
+    height: 50px;
+}
+#footer{
+    background-color: #064E42;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:space-around;
+}
+i{
+    color: #FFEFD6;
+    padding-right: 13px;
+    font-size: x-large;
+}
+#headerText{
+    position:absolute;
+    left:5%;
+    top:530px;
+    color: #F57328;
+    font-family: cursive;
+    font-weight: bold;
+}
+#textIntroduction{
+    position:absolute;
+    left:5%;
+    top: 580px;
+}
+.HomeGridSection{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #064E42;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    row-gap: 5px;
+}
+.HomeGridImage{
+    width: 300px;
+    height: 200px;
+    border-radius: 25px;
+    margin-left: 73px;
+    margin-top: 20px;
+   
+}
+#regButton{
+    position:absolute;
+    left:6%;
+    top: 640px;
+    border-radius: 10px;
+    background-color: #FFEFD6;
+    border:#FFEFD6;
+    
+}
+
+
+@media only screen and (min-device-width:481px)and (max-device-width:768px){
+    b{
+        font-size: 10px;
+    }}
+   
+@media only screen and (min-device-width:0)and (max-device-width:480px){
+    #footer{
+        grid-template-columns: auto  ;
+        justify-content: space-around;
+    }
+    b{
+        font-size: 7px;
+    }
+    .HomeGridSection{
+        grid-template-columns:auto;
+        justify-content: stretch;
+    }
+}
